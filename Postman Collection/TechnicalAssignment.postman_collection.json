@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "6f4b93db-176c-43ba-9917-3dba668db102",
+		"name": "TechnicalAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CustomerID\" : 1,\r\n\"InitialCredit\" :3000120\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60722/api/Account/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60722",
+					"path": [
+						"api",
+						"Account",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"Mina\" ,\r\n     \"SurName\" :\"Maurice\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60722/api/Customer/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60722",
+					"path": [
+						"api",
+						"Customer",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60722/api/Customer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60722",
+					"path": [
+						"api",
+						"Customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60722/api/Transactions/cfcac098-01d6-4206-8446-05fa077007d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60722",
+					"path": [
+						"api",
+						"Transactions",
+						"cfcac098-01d6-4206-8446-05fa077007d0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
