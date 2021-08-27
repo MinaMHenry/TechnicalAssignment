@@ -6,7 +6,7 @@ Please find in below the Steps to Execute and test the Solution :-
 	
 2.the default url will be http://localhost:60722/api
  
-3.You will find folder called postman have all the payloads , please attach this payloads to Postman and test it 
+3.You will find folder called "Postman Collection" have all the payloads , please import this Collection to Postman and test it 
  
 4.first run =>  http://localhost:60722/api/Customer/Create to create customer 
  
