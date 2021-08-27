@@ -51,13 +51,14 @@ namespace TechnicalAssignment.BusinessLogic.Services
                 List<Account> accounts = _unitOfWork.AccountRepository.GetCustomerAccounts(customer.CustomerID);
                 foreach (var account in accounts)
                 {
-                    ViewModel.Accounts.Add(new AccountInformation()
+                    ViewModel.Accounts.Add(new AccountInformation() 
+
                     {
                         AccountID = account.AccountID,
                         Balance = account.Balance,
                         Transactions = _unitOfWork.TransactionRepository.GetAccountTransactions(account.AccountID)
                     }) ;
-                    ViewModel.TotalBalance += account.Balance;
+                    ViewModel.TotalBalance += account.Balance; 
                 }
 
             }
