@@ -27,7 +27,7 @@ namespace TechnicalAssignment.Controllers
             try
             {
                 if (!_customerService.CustomerExists(model.CustomerID))
-                    return StatusCode(403,"Customer doesn't Exists");
+                    return StatusCode(200,"Customer doesn't Exists");
 
                 Guid accountId = _accountService.CreateAccount(model);
 

@@ -26,7 +26,7 @@ namespace TechnicalAssignment.Controllers
             try
             {
                 if (!_accountService.AccountExists(AccountID))
-                    return StatusCode(403, "Account doesn't Exists");
+                    return StatusCode(200, "Account doesn't Exists");
 
                 List<Transaction> model = _transactionService.GetAccountTransactions(AccountID);
 
